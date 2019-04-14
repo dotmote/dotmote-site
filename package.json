@@ -19,6 +19,7 @@
 		"gatsby-plugin-styled-components": "^3.0.7",
 		"gatsby-source-filesystem": "^2.0.29",
 		"gatsby-transformer-sharp": "^2.1.17",
+		"gh-pages": "^2.0.1",
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
@@ -28,13 +29,12 @@
 	"devDependencies": {
 		"prettier": "^1.17.0"
 	},
-	"keywords": [
-		"gatsby"
-	],
+	"keywords": [ "gatsby" ],
 	"license": "MIT",
 	"scripts": {
 		"build": "gatsby build",
 		"develop": "gatsby develop",
+		"deploy": "gatsby build && gh-pages -d public -b gh-pages",
 		"format": "prettier --write src/**/*.{js,jsx}",
 		"start": "npm run develop",
 		"serve": "gatsby serve",
