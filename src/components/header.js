@@ -3,39 +3,13 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 class Header extends Component {
-	componentDidMount() {
-		window.addEventListener('scroll', function(e) {
-			const nav = document.querySelector('header');
-			if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
-				nav.classList.add('nav-colored');
-				nav.classList.remove('nav-transparent');
-			} else {
-				nav.classList.add('nav-transparent');
-				nav.classList.remove('nav-colored');
-			}
-		});
-	}
-
-	componentWillUnmount() {
-		window.removeEventListener('scroll', function(e) {
-			const nav = document.querySelector('header');
-			if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
-				nav.classList.add('nav-colored');
-				nav.classList.remove('nav-transparent');
-			} else {
-				nav.classList.add('nav-transparent');
-				nav.classList.remove('nav-colored');
-			}
-		});
-	}
-
 	render() {
 		const { siteTitle } = this.props;
 
 		return (
 			<header
 				style={{
-					position: 'fixed',
+					position: 'absolute',
 					zIndex: 10,
 					width: '100vw'
 					// background: `#2E86AB`
