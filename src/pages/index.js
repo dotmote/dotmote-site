@@ -10,7 +10,7 @@ import StyledSplashBlock from '../components/StyledSplashBlock';
 const IndexPage = (props) => (
 	<Layout>
 		<SEO title="Home" keywords={[ `Dotmote Labs`, `sapflow`, `iot` ]} />
-		<StyledSplashBlock style={{ height: '1000px', position: 'relative' }}>
+		<StyledSplashBlock style={{ height: '100%', position: 'relative' }}>
 			<Img style={{ width: '100vw' }} fluid={props.data.forest2.childImageSharp.fluid} />
 			<h1
 				style={{

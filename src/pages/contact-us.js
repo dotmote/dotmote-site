@@ -9,8 +9,8 @@ import StyledSplashBlock from '../components/StyledSplashBlock';
 const ContactUsPage = (props) => (
 	<Layout>
 		<SEO title="Contact Us" keywords={[ `Dotmote Labs`, `sapflow`, `iot` ]} />
-		<StyledSplashBlock style={{ height: '600px', position: 'relative' }}>
-			<Img style={{ width: '100vw' }} fluid={props.data.contact.childImageSharp.fluid} />
+		<StyledSplashBlock style={{ height: '100%', position: 'relative' }}>
+			<Img style={{ width: '100%' }} fluid={props.data.contact.childImageSharp.fluid} />
 			<h1
 				style={{
 					color: 'white',
