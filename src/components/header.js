@@ -16,27 +16,23 @@ class Header extends Component {
 					// marginBottom: `1.45rem`,
 				}}
 			>
-				<div
+				<h1
 					style={{
-						margin: `0 auto`,
-						padding: `1.45rem 1.0875rem`,
-						display: 'flex'
+						margin: 0,
+						padding: `1.45rem 1.0875rem`
 					}}
-					className=".nav-link-container"
 				>
-					<h1 style={{ margin: 0 }}>
-						<Link
-							to="/"
-							style={{
-								color: `white`,
-								textDecoration: `none`,
-								textShadow: '1px 1px 2px black'
-							}}
-						>
-							{siteTitle}
-						</Link>
-					</h1>
-				</div>
+					<Link
+						to="/"
+						style={{
+							color: `white`,
+							textDecoration: `none`,
+							textShadow: '1px 1px 2px black'
+						}}
+					>
+						{siteTitle}
+					</Link>
+				</h1>
 			</header>
 		);
 	}

@@ -1,20 +1,3 @@
-/* navbar styling */
-
-header {
-	width: 100vw;
-	position: fixed;
-	transition: 0.5s;
-	z-index: 2;
-}
-
-.nav-transparent {
-	background: transparent;
-}
-
-.nav-colored {
-	background: #2e86ab;
-}
-
 /* 
 svg icon styling to vertically align in-line svg's
 */
