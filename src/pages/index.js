@@ -10,37 +10,30 @@ import StyledSplashBlock from '../components/StyledSplashBlock';
 const IndexPage = (props) => (
 	<Layout>
 		<SEO title="Home" keywords={[ `Dotmote Labs`, `sapflow`, `iot` ]} />
-		<StyledSplashBlock>
-			<Img style={{ maxHeight: '100vh', position: 'inherit' }} fluid={props.data.forest2.childImageSharp.fluid} />
+		<StyledSplashBlock style={{ height: '1000px', position: 'relative' }}>
+			<Img style={{ width: '100vw' }} fluid={props.data.forest2.childImageSharp.fluid} />
 			<h1
 				style={{
 					color: 'white',
+					textShadow: '1px 1px 2px black',
 					position: 'absolute',
-					top: 0,
-					left: 0,
-					right: 0,
-					bottom: 0,
-					justifyContent: 'center',
-					alignItems: 'center',
-					display: 'flex',
-					textShadow: '1px 1px 2px black'
+					left: '50%',
+					top: '50%',
+					transform: 'translate(-50%, -50%)'
 				}}
 			>
 				Making Sense of Our World
 			</h1>
 		</StyledSplashBlock>
-		<StyledSplashBlock style={{ height: '100vh', background: '#2E86AB' }}>
+		<StyledSplashBlock style={{ height: '600px', position: 'relative', background: '#2E86AB' }}>
 			<h1
 				style={{
 					color: 'white',
-					position: 'relative',
-					top: 0,
-					left: 0,
-					right: 0,
-					bottom: 0,
-					justifyContent: 'center',
-					alignItems: 'center',
-					display: 'flex'
+					textShadow: '1px 1px 2px black',
+					position: 'absolute',
+					left: '50%',
+					top: '50%',
+					transform: 'translate(-50%, -50%)'
 				}}
 			>
 				One Microcontroller at a Time

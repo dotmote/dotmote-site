@@ -9,20 +9,16 @@ import StyledSplashBlock from '../components/StyledSplashBlock';
 const ResearchPage = (props) => (
 	<Layout>
 		<SEO title="Research" keywords={[ `Dotmote Labs`, `sapflow`, `iot` ]} />
-		<StyledSplashBlock style={{ height: '100vh' }}>
-			<Img style={{ maxHeight: '100vh', position: 'inherit' }} fluid={props.data.lab.childImageSharp.fluid} />
+		<StyledSplashBlock style={{ height: '600px', position: 'relative' }}>
+			<Img style={{ width: '100vw' }} fluid={props.data.lab.childImageSharp.fluid} />
 			<h1
 				style={{
 					color: 'white',
+					textShadow: '1px 1px 2px black',
 					position: 'absolute',
-					top: 0,
-					left: 0,
-					right: 0,
-					bottom: 0,
-					justifyContent: 'center',
-					alignItems: 'center',
-					display: 'flex',
-					textShadow: '1px 1px 2px black'
+					left: '50%',
+					top: '50%',
+					transform: 'translate(-50%, -50%)'
 				}}
 			>
 				Research
