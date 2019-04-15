@@ -38,22 +38,7 @@ const Layout = ({ children }) => (
 					}}
 				>
 					<main>{children}</main>
-					<StyledSplashBlock style={{ height: '600px', background: '#F6AE2D' }}>
-						<h1
-							style={{
-								color: 'white',
-								position: 'relative',
-								top: 0,
-								left: 0,
-								right: 0,
-								bottom: 0,
-								justifyContent: 'center',
-								alignItems: 'center',
-								display: 'flex'
-							}}
-						>
-							Learn More
-						</h1>
+					<StyledSplashBlock style={{ height: '100%', background: '#F6AE2D', padding: '2rem 2rem' }}>
 						<div>
 							<h2>
 								<Link

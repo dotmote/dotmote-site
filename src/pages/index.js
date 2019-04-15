@@ -25,20 +25,6 @@ const IndexPage = (props) => (
 				Making Sense of Our World
 			</h1>
 		</StyledSplashBlock>
-		<StyledSplashBlock style={{ height: '600px', position: 'relative', background: '#2E86AB' }}>
-			<h1
-				style={{
-					color: 'white',
-					textShadow: '1px 1px 2px black',
-					position: 'absolute',
-					left: '50%',
-					top: '50%',
-					transform: 'translate(-50%, -50%)'
-				}}
-			>
-				One Microcontroller at a Time
-			</h1>
-		</StyledSplashBlock>
 	</Layout>
 );
 
