@@ -64,6 +64,17 @@ const Layout = ({ children }) => (
 							</h2>
 							<h2>
 								<Link
+									to="/about"
+									style={{
+										color: `white`,
+										textDecoration: `none`
+									}}
+								>
+									About
+								</Link>
+							</h2>
+							<h2>
+								<Link
 									to="/contact-us"
 									style={{
 										color: `white`,

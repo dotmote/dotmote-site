@@ -42,19 +42,7 @@ export const fluidImage = graphql`
 
 export const pageQuery = graphql`
 	query {
-		envelopes: file(relativePath: { eq: "envelopes.jpg" }) {
-			...fluidImage
-		}
-		forest: file(relativePath: { eq: "forest.jpg" }) {
-			...fluidImage
-		}
 		forest2: file(relativePath: { eq: "forest2.jpg" }) {
-			...fluidImage
-		}
-		team: file(relativePath: { eq: "team.jpg" }) {
-			...fluidImage
-		}
-		space: file(relativePath: { eq: "space.jpg" }) {
 			...fluidImage
 		}
 	}

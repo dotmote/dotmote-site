@@ -28,7 +28,7 @@ const ContactUsPage = (props) => (
 			style={{
 				margin: `0 auto`,
 				maxWidth: 960,
-				padding: `0px 1.0875rem 1.45rem`
+				padding: `1.0875rem 1.45rem`
 			}}
 		>
 			<p>We'd love to chat. Reach out to us at: [email].</p>
