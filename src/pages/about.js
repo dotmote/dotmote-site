@@ -10,7 +10,11 @@ const AboutPage = (props) => (
 	<Layout>
 		<SEO title="About" keywords={[ `Dotmote Labs`, `sapflow`, `iot` ]} />
 		<StyledSplashBlock style={{ height: '100%', position: 'relative' }}>
-			<Img style={{ width: '100%' }} fluid={props.data.team.childImageSharp.fluid} />
+			<Img
+				style={{ width: '100%' }}
+				imgStyle={{ filter: 'brightness(0.9)' }}
+				fluid={props.data.team.childImageSharp.fluid}
+			/>
 			<h1
 				style={{
 					color: 'white',
