@@ -33,8 +33,8 @@ export default IndexPage;
 export const fluidImage = graphql`
 	fragment fluidImage on File {
 		childImageSharp {
-			fluid(maxWidth: 1000) {
-				...GatsbyImageSharpFluid
+			fluid(maxWidth: 1680) {
+				...GatsbyImageSharpFluid_withWebp_tracedSVG
 			}
 		}
 	}

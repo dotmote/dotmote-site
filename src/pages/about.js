@@ -35,6 +35,9 @@ const AboutPage = (props) => (
 				padding: `1.0875rem 1.45rem`
 			}}
 		>
+			<div style={{ width: '150px', margin: 'auto', marginBottom: '1.45rem' }}>
+				<Img style={{ width: '100%' }} fluid={props.data.logo.childImageSharp.fluid} />
+			</div>
 			<p>
 				Our goal is to make climate change research more accessible by providing open source hardware and
 				software.
@@ -53,6 +56,9 @@ export default AboutPage;
 export const pageQuery = graphql`
 	query {
 		team: file(relativePath: { eq: "forest.jpg" }) {
+			...fluidImage
+		}
+		logo: file(relativePath: { eq: "icon.png" }) {
 			...fluidImage
 		}
 	}
