@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import StyledSplashBlock from '../components/StyledSplashBlock';
+import { MDXRenderer } from 'gatsby-mdx';
 
 const ProductsPage = (props) => (
 	<Layout>
@@ -31,10 +32,7 @@ const ProductsPage = (props) => (
 				padding: `1.0875rem 1.45rem`
 			}}
 		>
-			<h1>Sapflow Monitor</h1>
-			<p>Insert copy here</p>
-			<h1>Micro-Met Station</h1>
-			<p>Insert copy here</p>
+			<MDXRenderer>{props.data.products.code.body}</MDXRenderer>
 		</div>
 	</Layout>
 );
@@ -45,6 +43,11 @@ export const pageQuery = graphql`
 	query {
 		space: file(relativePath: { eq: "space.jpg" }) {
 			...fluidImage
+		}
+		products: mdx(frontmatter: { title: { eq: "products" } }) {
+			code {
+				body
+			}
 		}
 	}
 `;
