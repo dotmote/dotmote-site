@@ -7,3 +7,6 @@
 3. Run `npm install`
 4. Run `gatsby develop` to start a development server
 5. Run `npm run deploy` to deploy a new version of the site to GitHub Pages
+
+## Editing MDX Pages
+Edit the `.mdx` files in the `mdx` directory. Pages that depend on data from `.mdx` files will send a GraphQL query at build time to pass in to the `<MDXRenderer>` component. See https://gatsby-mdx.netlify.com/ for more information.
