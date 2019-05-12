@@ -1,5 +1,8 @@
 # Site for Dotmote Labs
 
+## Required CLI Tools
+- [Gatsby CLI](https://www.gatsbyjs.org/docs/quick-start/): Run `npm install -g gatsby-cli`
+
 ## Installation
 
 1. `git clone` the repo
